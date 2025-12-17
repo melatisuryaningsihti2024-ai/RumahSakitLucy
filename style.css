@@ -161,6 +161,12 @@ nav .navbar-brand {
     gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk perangkat kecil */
+    }
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -333,3 +339,4 @@ footer img:hover {
         padding: 8px;
     }
 }
+
