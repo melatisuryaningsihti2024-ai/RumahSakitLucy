@@ -1,0 +1,335 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan Poppins sebagai font utama */
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Header */
+nav {
+    background-color: #007bff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav .navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Keunggulan Section */
+.keunggulan {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.keunggulan h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.keunggulan-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.keunggulan-text {
+    flex: 1;
+    text-align: left;
+}
+
+.keunggulan-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Testimoni Section */
+.testimoni {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimoni h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testimoni-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimoni-text {
+    flex: 1;
+    text-align: left;
+}
+
+.testimoni-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Pendaftaran Section */
+.pendaftaran-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.judul {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.sub-judul {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+/* Container untuk Jadwal Dokter */
+.jadwal-dokter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center; /* Menambahkan ini untuk memusatkan teks dalam container */
+}
+
+/* Judul Tabel Jadwal Dokter */
+.jadwal-dokter-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Memastikan teks judul berada di tengah */
+}
+
+/* Paragraf Deskripsi Jadwal Dokter */
+.jadwal-dokter-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center; /* Memastikan teks paragraf berada di tengah */
+}
+
+/* Tabel Jadwal Dokter */
+.jadwal-dokter {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jadwal-dokter th,
+.jadwal-dokter td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins di tabel */
+}
+
+.jadwal-dokter th {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.jadwal-dokter td {
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+.jadwal-dokter tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.jadwal-dokter tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.jadwal-dokter td a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.jadwal-dokter td a:hover {
+    color: #0056b3;
+}
+
+/* Responsif untuk perangkat dengan ukuran lebih kecil */
+@media (max-width: 768px) {
+    .jadwal-dokter th,
+    .jadwal-dokter td {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .jadwal-dokter-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .jadwal-dokter {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .jadwal-dokter th,
+    .jadwal-dokter td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
